@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-16">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Chapitre 2</title>
+      <link rel="stylesheet" href="css/style.css">
+</head>
+      <script src="code.jquery.com/jquery.js"></script>
+      <script type="text/javascript">
+            (function($) { // Begin jQuery
+              $(function() { // DOM ready
+                // If a link has a dropdown, add sub menu toggle.
+                $('nav ul li a:not(:only-child)').click(function(e) {
+                  $(this).siblings('.navbardropdown').toggle();
+                  // Close one dropdown when selecting another
+                  $('.navbardropdown').not($(this).siblings()).hide();
+                  e.stopPropagation();
+                });
+                // Clicking away from dropdown will remove the dropdown class
+                $('html').click(function() {
+                  $('.navbardropdown').hide();
+                });
+                // Toggle open and close nav styles on click
+                $('#navbartoggle').click(function() {
+                  $('nav ul').slideToggle();
+                });
+                // Hamburger to X toggle
+                $('#navbartoggle').on('click', function() {
+                  this.classList.toggle('active');
+                });
+              }); // end DOM ready
+            })(jQuery); // end jQuery
+      </script>
+
+<body>
+      <aside>
+            <nav>
+                  <div class="navbarmobile">
+                        <span class="brand"><a href="index.html">Série sans nom</a></span>
+                        <a id="navbartoggle" href="#!"><span></span></a>
+                  </div>
+                        <ul class ="navbarlist">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="chapitre.html">Chapitres</a></li>
+                  </ul>
+            </nav>
+      </aside>
+<main>
+    <article>
+    <div class="blog">
+        <h2><div class="NombreChapitreDeux">Chapitre 1</div></h2>
+        <h2><div class="DateChapitre">PUBLIÉ LE <a href="">9 AOÛT 2023</a></div></h2>
+        <div class="pagination">
+            <a href="" class="precedent">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>  
+            <a href="" class="prochain">Prochain Chapitre →</a>  
+        </div>
+        <div class="Texte">
+<p>Une fenêtre s'ouvrit devant moi.</p>
+
+<p><strong>[La compétence Magie Muette (SSS+) a été apprise.]</strong></p>
+
+<p>Je n'en croyais pas mes yeux. J'avais besoin de vérifier ça.</p>
+
+<p>« INFORMATIONS »</p>
+
+<p>-----INFORMATIONS-----</p>
+
+<p><strong>Identité :</strong> Kato Haruo</p>
+<p><strong>Race :</strong> Humain</p>
+<p><strong>Âge :</strong> 15</p>
+<p><strong>Genre :</strong> Homme</p>
+
+<p><strong>Mana :</strong> ???/???</p>
+
+<p><strong>Compétences :</strong></p>
+<p>- ▮▮▮▮▮ (???)</p>
+<p>- Magie Muette (SSS+)</p>
+
+<p><strong>Spécialité :</strong></p>
+<p>- Réincarné (???</p>
+
+<p>-----------------------</p>
+
+<p>Elle était là. C'était vrai. Juste en y pensant, je l'avais obtenue. Je ne me posais aucune question. Je pensais que c'était normal et que l'on me faisait une mauvaise blague par rapport à sa disparition, alors je fis comme si de rien n'était.</p>
+
+<p>« Haruo ? Qu'est-ce que tu attends pour lancer le sort ? »</p>
+
+<p>J'avais complètement oublié le professeur. Cependant, s'ils voulaient me faire une blague, alors je tomberais dedans.</p>
+
+<p>Je visai la porte du regard et criai haut et fort :</p>
+
+<p>« DOOR-OPENER ! »</p>
+
+<p>...</p>
+
+<p>Rien ne se passa. La classe éclata de rire, et le professeur parut déçu.</p>
+
+<p>Quelques secondes après, la porte s'ouvrit avec une puissance folle. On voyait le vent, tant la pression de l'ouverture de la porte était forte.</p>
+
+<p><strong>[Le sort DOOR-OPENER (E) a été appris. Il a été ajouté à votre liste de sorts.]</strong></p>
+
+<p>« Ma liste de sorts... INFORMATIONS », pensais-je.</p>
+
+<p>-----INFORMATIONS-----</p>
+
+<p><strong>Identité :</strong> Kato Haruo</p>
+<p><strong>Race :</strong> Humain</p>
+<p><strong>Âge :</strong> 15</p>
+<p><strong>Genre :</strong> Homme</p>
+
+<p><strong>Mana :</strong> ???/???</p>
+
+<p><strong>Compétences :</strong></p>
+<p>- ▮▮▮▮▮ (???)</p>
+<p>- Magie Muette (SSS+)</p>
+
+<p><strong>Sorts :</strong></p>
+<p>- DOOR-OPENER (E)</p>
+
+<p><strong>Spécialité :</strong></p>
+<p>- Réincarné (???</p>
+
+<p>-----------------------</p>
+
+<p>« Je vois, c'est aussi simple que ça... »</p>
+
+<p>Tout le monde se tut. Le professeur, lui, me regarda, choqué, mais fit semblant de rien devant la classe, admettant que cela était normal.</p>
+
+<p>C'était maintenant au tour de la classe d'essayer le sort.</p>
+
+<p>Ils y parvinrent tous, mais personne ne réussit à ouvrir la porte avec la même force que moi. C'était inexplicable.</p>
+
+<p>« Était-ce vraiment moi ? » Cette question tournait en boucle dans ma tête, puis le cours se termina.</p>
+
+<p>Direction la cour du lycée.</p>
+
+<p>En y arrivant, je perçus des choses plutôt "surnaturelles"... Pour commencer, il n'y avait pas que des humains, mais c'était à prévoir puisqu'il était inscrit "Race : Humain" dans ma fenêtre d'informations...</p>
+
+<p>Je vis des elfes, des humains mi-chats, mi-chiens, des humains mi-lézards... et même des mi-elfes...</p>
+
+<p>« Je me suis bel et bien réincarné dans un monde fantastique... » </p>
+
+<p>« HÉÉÉ, HARUO, T'ES DÉJÀ SORTI ? »</p>
+
+<p>Un groupe de personnes venait de crier mon prénom, mais petit problème, je ne les connaissais pas...</p>
+
+<p>Ils s'approchaient de plus en plus. Ils étaient six hommes mi-lézards. Ça ne me disait rien qui vaille...</p>
+
+<p>« Ahah, ouais, ma guérison s'est fait— »</p>
+
+<p>*KOF*</p>
+
+<p>Me voilà à terre. J'avais reçu un coup de poing. Pourquoi ? Je ne savais pas.</p>
+
+<p>« Depuis quand t'amuses-tu à me parler, pauvre con ? »</p>
+
+<p>Je ne répondis pas, je restai au sol.</p>
+
+<p>« Et maintenant, tu ne réponds plus ? T'as vite retrouvé ton habitude de petit toutou ! »</p>
+
+<p>Petit toutou... Je me demandais ce que cela signifiait.</p>
+
+<p>« T'as réussi à survivre alors qu'on t'a poussé du cinquième étage, et tu t'es rétabli en deux jours. Heureusement que tu as un système de guérison rapide ! »</p>
+
+<p><strong>« Ils m'ont poussé... du cinquième étage ? C'est donc à cause d'eux que je me suis réincarné ? », pensais-je.</strong></p>
+
+<p>« Merci », dis-je.</p>
+
+<p>L'homme-mi-lézard devant moi eut l'air étonné.</p>
+
+<p>« Merci infiniment de m'avoir poussé du cinquième étage ! », criai-je, attirant tous les regards de la cour.</p>
+
+<p>C'est à ce moment-là que je compris ce qu'il s'était passé. En tant que 500e élève, soit le plus faible, j'avais forcément été harcelé.</p>
+
+<p>« Je ne pensais pas que ça existait aussi dans ce monde. Ça me rappelle des souvenirs », pensais-je.</p>
+
+<p>« MAIS TU TE FOUS DE MA GUEULE EN PLUS ! »</p>
+
+<p>Et voilà qu'il me donna un coup de pied dans le ventre pour que je reste à terre.</p>
+
+<p>« Il est pas net... »</p>
+<p>« Dire ça à Aiko... »</p>
+<p>« Sa chute l'a retardé mentalement... »</p>
+
+<p>J'entendais les hommes-mi-lézards derrière ce fameux "Aiko" murmurer des choses futiles.</p>
+
+<p>Je me relevai en regardant Aiko.</p>
+
+<p>« C'est maintenant qu'on doit se battre ? »</p>
+
+<p>*******************************************************</p>
+
+<p>Nous sommes le lendemain. Les événements d'hier n'étaient pas passés inaperçus. J'avais voulu défier "Aiko" et je m'étais retrouvé à l'infirmerie. C'est le docteur qui m'a retrouvé par terre, en sang. D'après lui, ils étaient plusieurs à m'avoir attaqué et avaient utilisé plusieurs sorts de niveau D.</p>
+
+<p>J'avais de nombreuses chances de mourir, mais me voilà encore en vie.</p>
+
+<p>Heureusement, j'ai pu rentrer chez moi le soir même.</p>
+
+<p>Honnêtement, depuis que j'ai appris la magie muette et que j'ai pu utiliser un sort de magie directe, je m'y suis trop cru.</p>
+
+<p>Je pensais vraiment être fort, comme les personnages de bandes dessinées que je lisais, mais il faut croire que non...</p>
+
+<p>« D'ailleurs, je trouve ça assez étonnant qu'ils aient utilisé de la magie directe avec leur sort de niveau D... Peut-être que la magie muette n'existe définitivement plus... »</p>
+
+<p>Je regardai la porte et pensai "Door Opener".</p>
+
+<p>La porte s'ouvrit. J'avais pu utiliser le sort Door Opener en magie muette. C'était la preuve que j'avais bel et bien la magie muette.</p>
+
+<p>« Dois-je vraiment l'utiliser ? N'est-ce pas trop suspect ? Je devrais faire attention en l'utilisant. »</p>
+
+<p>« La magie muette... »</p>
+
+<p>Je m'endormis en y pensant.</p>
+
+<p>En me réveillant, il faisait nuit. Je ne savais pas combien de temps j'avais dormi, mais je savais que c'était la nuit grâce à ma fenêtre. Heureusement que c'était le week-end.</p>
+
+<p>« Qu'est-ce que je devrais faire dans ce monde maintenant ? »</p>
+
+<p>Je pensais apprendre des compétences ainsi que des sorts, mais je ne savais pas comment.</p>
+
+<p>« J'ai pu apprendre la compétence Magie Muette en y pensant, mais je ne connais pas d'autres compétences et sorts de ce monde... »</p>
+
+<p>C'était vraiment très dérangeant. Le seul moyen pour moi d'en apprendre pour l'instant était via d'autres personnes.</p>
+
+<p>« Kof... Kof... »</p>
+
+<p>Un bruit émana de ma fenêtre. Je m'en approchai pour voir et je fus stupéfait.</p>
+
+<p>Une fille, de mon âge, avec l'uniforme de mon lycée, un peu déchiré, boitait. Elle semblait être suivie par quelqu'un.</p>
+
+<p>Je continuai à observer et cela ressemblait à un combat, mais la fille semblait en très mauvaise posture.</p>
+
+<p>Je ne sais pas pourquoi, mais mon instinct me disait d'aller l'aider, et c'est ce que je fis. Je sautai par la fenêtre et accourus vers elle.</p>
+
+<p>« Tout va bien ? »</p>
+
+<p>« No- »</p>
+
+<p>« FIREBALL ! »</p>
+
+<p>Un homme lança une sorte de boule de feu derrière elle. La boule de feu toucha la fille. Heureusement, le sort n'était pas assez puissant.</p>
+
+<p>La fille tomba par terre et l'homme avança pas à pas.</p>
+
+<p>« T'es qui, toi ? », demanda-t-il.</p>
+
+<p>« Moi ? Un simple passant. »</p>
+
+<p>« Si t'es un simple passant, tu peux partir alors. Il n'y a rien à regarder, je suis son père et ma fille a fugué, je veux juste la ramener à la maison, ahah ! »</p>
+
+<p>Je regardai la fille et elle fit des signes de tête pour contredire l'homme.</p>
+
+<p>« Désolé, mon vieux, mais ce n'est pas aujourd'hui que ta fille rentrera à la maison. »</p>
+
+<p>« Et qu'est-ce que tu crois faire contre un homme beaucoup plus âgé que toi, gamin ? »</p>
+
+<p>C'était une très bonne question. Qu'est-ce que je pouvais faire ? J'avais déjà une idée, mais c'était risqué sachant que je n'avais aucune confirmation que ça marcherait.</p>
+
+<p>« Je ne sais pas ! »</p>
+
+<p>Je souris à la fille, la pris dans mes bras et commençai à courir.</p>
+
+<p>« Espèce de... FIREBALL ! »</p>
+
+<p>Par chance, j'esquivai le sort et me cachai derrière un mur.</p>
+
+<p>La fille essaya de parler.</p>
+
+<p>« Il est... fort... fuis... »</p>
+
+<p>Elle ne savait pas à qui elle s'adressait.</p>
+
+<p>« Et si je n'en ai pas envie ? »</p>
+
+<p>« Alors... on mo... mourra... »</p>
+
+<p>« J'ai toujours rêvé de mourir aux côtés d'une fille, de toute façon ! »</p>
+
+<p>L'homme approchait de plus en plus, et je savais quoi faire.</p>
+
+<p>« Le sort FireBall. Il le crie tout en visant un endroit avec son doigt, et le sort cible cet endroit, c'est bien ça ? » demandai-je à la fille.</p>
+
+<p>« C'est... un sort de rang... E... Il est inoffensif... L'homme veut juste... nous humilier parce qu'il est fort... »</p>
+
+<p>« Mais c'est bien comme je l'ai décrit, hein ? »</p>
+
+<p>« Oui. »</p>
+
+<p>« Merci ! »</p>
+
+<p>Je me décollai du mur, regardai l'homme et le visai du doigt.</p>
+
+<p>« Ahah, qu'est-ce que tu crois faire avec un pauvre sort de rang E ? »</p>
+
+<p>« Le tien, il fait bien mal, non ? »</p>
+
+<p>« C'est justement parce que c'est le mien, je l'ai entraîné pendant des années ! »</p>
+
+<p>« Je vois... Donc tu vises la personne avec le doigt et tu dis le nom du sort ? »</p>
+
+<p>« Oui, mais ça ne me fera rien si ça vient de toi ! »</p>
+
+<p>« Tu ne le fais jamais en magie muette ? »</p>
+
+<p>« La magie muette n'existe plus, espèce de débile, on ne te l'a pas appris ? »</p>
+
+<p>« D'accord... Merci, le vieux ! »</p>
+
+<p>Mes doutes se confirmèrent.</p>
+
+<p>La magie muette n'existait apparemment plus, mais je pouvais l'utiliser, et j'étais dans une situation où il fallait que je m'en serve.</p>
+
+<p>« J'espère que je ne vais pas le tuer. »</p>
+
+<p>Toujours en train de viser l'homme, je pensai haut et fort :</p>
+
+<p>« FIREBALL »</p>
+
+<p>[Le sort FireBall (E) a été appris. Il a été ajouté à votre liste de sorts.]</p>
+
+<p>[Utilisation du sort FireBall (E)]</p>
+          
+
+        <div class="pagination">
+            <a href="" class="precedent">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>  
+            <a href="">Prochain Chapitre →</a>  
+        </div>
+        </div>
+    </div>
+    </article>
+</main>
+</body>
+</html>
