@@ -1,0 +1,336 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.chapitreliste {
+    color: #262626;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    background-color: #ffffff;
+    color: #262626;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased
+}
+
+time {
+    font-color: #262626
+}
+
+
+header {
+    padding: 0px 15px;
+    text-align: center;
+    margin: 50px 0 0;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -50px
+}
+
+.blog {
+    text-align: center;
+    margin: 0 15%;
+}
+
+.NombreChapitreDeux {
+    font-family: "Literata 18pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.03rem;
+    font-size: clamp(2.5rem, 2.5rem + ((1vw - 0.2rem) * 0.909), 3rem);
+    margin-bottom: 10px;
+}
+
+.DateChapitre {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-family: "Inter", sans-serif;
+}
+
+
+.Texte {
+    text-align: left;
+    line-height: 2.0;
+}
+
+.pagination {
+    text-decoration: none;
+    display: flex;
+    flex_direction: row;
+    justify-content: space-between
+}
+
+
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: #17202A;
+    font-family: "Muli", sans-serif;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+}
+
+h3 {
+    color: #262626
+}
+
+
+.ChapitreSorti {
+    position: relative;
+}
+
+.ChapitreNombre {
+    position: relative;
+    text-align: center;
+    width: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 3px #ccc;
+    margin: 0 auto;
+
+}
+
+.LireChapitre {
+    position: relative;
+    text-align: center;
+    width: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 5px #ccc;
+    margin: 0 auto;
+
+}
+
+.PosteChapitre {
+    text-align: center;
+    padding: 20px;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ListeChapitre {
+    height: 60px;
+    width: 300px;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.chapitrelist {
+    position: relative;
+    top: -9px;
+    left: 2px;
+}
+
+.DateChapitre a, .DateChapitre a:visited {
+    color: #0E86D4;
+    text-decoration: none
+}
+
+.pagination a {
+    text-decoration: none
+}
+
+main {
+    padding: 0 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+    flex: 1
+}
+
+aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #262626;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0px 1px 1px RGBA(4, 25, 54, 0.1)
+}
+
+a, a:visited {
+    color: #17202A;
+    text-decoration: none;
+    font-weight: bold
+}
+
+a:hover {
+    color: #2581DC;
+    text-decoration: underline
+}
+
+nav {
+    float: left;
+    width: 100%
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+nav ul li {
+    float: left;
+    position: relative
+}
+
+nav ul li a,  nav ul li a:visited, nav ul li button {
+    display: block;
+    padding: 0 20px;
+    line-height: 50px;
+    background: #262626;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover, nav ul li a:visited:hover, nav ul li button:hover {
+    background: #2581DC;
+    color: #fff
+}
+
+nav ul li ul li {
+    min-width: 190px
+}
+
+nav ul li ul li a {
+    padding: 15px;
+    line-height: 20px
+}
+
+.navbardropdown {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15)
+}
+
+.navbarmobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    background: #262626;
+    height: 50px;
+    width: 100%
+}
+
+.brand {
+    position: absolute;
+    padding-left: 20px;
+    float: left;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-size: 1.4em
+}
+
+.brand a, .brand a:visited {
+    color: #fff;
+    text-decoration: none
+}
+
+@media screen and (min-width: 801px) {
+    .navbarlist {
+        display: block !important
+    }
+}
+
+#navbartoggle {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px
+}
+#navbartoggle span, #navbartoggle span:before, #navbartoggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #fff;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out
+}
+#navbartoggle span:before {
+    top: -10px
+}
+#navbartoggle span:after {
+    bottom: -10px
+}
+#navbartoggle.active span {
+    background-color: transparent
+}
+#navbartoggle.active span:before, #navbartoggle.active span:after {
+    top: 0
+}
+#navbartoggle.active span:before {
+    transform: rotate(45deg)
+}
+#navbartoggle.active span:after {
+    transform: rotate(-45deg)
+}
+
+@media only screen and (max-width: 800px) {
+    .navbarmobile {
+        display: block
+    }
+
+    nav {
+        width: 100%;
+        padding: 40px 0 10px
+    }
+
+    nav ul {
+        display: none
+    }
+
+    nav ul li {
+        float: none
+    }
+    nav ul li a {
+        padding: 15px;
+        line-height: 20px
+    }
+    nav ul li ul li a {
+        padding-left: 30px
+    }
+    nav ul button {
+        width: 100%
+    }
+
+    .navbardropdown {
+        position: static
+    }
+    header {
+        display: none
+    }
+}
+
+article {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px
+}
