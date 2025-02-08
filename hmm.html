@@ -14,21 +14,35 @@
     <div id="countdown"></div>
     
     <script>
-        let totalMilliseconds = (120 * 60 * 60 + 44 * 60) * 1000;
+        const totalTime = (120 * 60 * 60 + 44 * 60) * 1000;
+        let endTime = localStorage.getItem("endTime");
+        
+        if (!endTime) {
+            endTime = Date.now() + totalTime;
+            localStorage.setItem("endTime", endTime);
+        } else {
+            endTime = parseInt(endTime);
+        }
         
         function updateCountdown() {
-            let hours = Math.floor(totalMilliseconds / (1000 * 60 * 60));
-            let minutes = Math.floor((totalMilliseconds % (1000 * 60 * 60)) / (1000 * 60));
-            let seconds = Math.floor((totalMilliseconds % (1000 * 60)) / 1000);
-            let milliseconds = totalMilliseconds % 1000;
+            let now = Date.now();
+            let remainingTime = endTime - now;
+            
+            if (remainingTime <= 0) {
+                document.getElementById("countdown").innerText = "Temps écoulé";
+                localStorage.removeItem("endTime");
+                return;
+            }
+            
+            let hours = Math.floor(remainingTime / (1000 * 60 * 60));
+            let minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+            let milliseconds = remainingTime % 1000;
             
             document.getElementById("countdown").innerText = 
                 `${hours}h ${minutes}m ${seconds}s ${milliseconds}ms`;
             
-            if (totalMilliseconds > 0) {
-                totalMilliseconds -= 10;
-                setTimeout(updateCountdown, 10);
-            }
+            setTimeout(updateCountdown, 10);
         }
         
         updateCountdown();
