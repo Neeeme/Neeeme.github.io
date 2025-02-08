@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Décompte</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        #countdown { font-size: 2em; }
+    </style>
+</head>
+<body>
+    <h1>Décompte</h1>
+    <div id="countdown"></div>
+    
+    <script>
+        let totalMilliseconds = (120 * 60 * 60 + 44 * 60) * 1000;
+        
+        function updateCountdown() {
+            let hours = Math.floor(totalMilliseconds / (1000 * 60 * 60));
+            let minutes = Math.floor((totalMilliseconds % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((totalMilliseconds % (1000 * 60)) / 1000);
+            let milliseconds = totalMilliseconds % 1000;
+            
+            document.getElementById("countdown").innerText = 
+                `${hours}h ${minutes}m ${seconds}s ${milliseconds}ms`;
+            
+            if (totalMilliseconds > 0) {
+                totalMilliseconds -= 10;
+                setTimeout(updateCountdown, 10);
+            }
+        }
+        
+        updateCountdown();
+    </script>
+</body>
+</html>
