@@ -167,7 +167,6 @@ body { /* pour définir une marge du haut */
     }
 }
 
-
 /******************************************
 *	Expérience professionnelle
 ******************************************/
@@ -192,7 +191,6 @@ body { /* pour définir une marge du haut */
     font-size: 1.2em;
     line-height: 1.5em;
 }
-
 
 /******************************************
 *	Me contacter
@@ -228,8 +226,8 @@ body { /* pour définir une marge du haut */
     -moz-filter: grayscale(0);
     -ms-filter: grayscale(0);
     -o-filter: grayscale(0);
-    
 }
+
 /******************************************
 *	Langues
 ******************************************/
@@ -278,4 +276,19 @@ body { /* pour définir une marge du haut */
 }
 #competences .container .classement5 {
     background-position: 0 0px;
+}
+
+/******************************************
+*     Passions
+******************************************/
+.passion{
+    color: #fff;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px 5px 5px 5px;
+    background: #000;
+    position: relative;
+    font-size: 1.2em;
+    border-radius: 10px;
 }
