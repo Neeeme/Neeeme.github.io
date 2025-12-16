@@ -192,3 +192,19 @@ body { /* pour définir une marge du haut */
     font-size: 1.2em;
     line-height: 1.5em;
 }
+
+
+/******************************************
+*	Langues
+******************************************/
+#langues .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#langues .langue, #langues .niveau{
+    font-size: 1.3em;
+}
+#langues .langue {
+    padding-top: 3px;
+}
