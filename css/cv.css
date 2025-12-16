@@ -45,3 +45,20 @@ body { /* pour définir une marge du haut */
     content: '';
     display: block;
 }
+
+/****************************************
+*	Rubriques
+****************************************/
+.rubrique { /* mage du bas pour toutes les classes "rubrique" */
+    margin-bottom: 15px;
+}
+.rubrique h2 { /* rouge pour les titres h2 */
+    color: rgb(226,0,26);
+}
+.rubrique h2::before{ /* marge de droite avant les titres h2*/
+    margin-right: 5px;
+}
+.rubrique p{ /* caractéristiques des paragraphes */
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
